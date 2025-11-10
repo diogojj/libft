@@ -6,11 +6,12 @@
 /*   By: dide-jes <dide-jes@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 15:31:44 by dide-jes          #+#    #+#             */
-/*   Updated: 2025/10/28 10:43:25 by dide-jes         ###   ########.fr       */
+/*   Updated: 2025/11/10 15:54:08 by dide-jes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <string.h>
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
@@ -37,15 +38,15 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
-/* int	main(void)
+int	main(void)
 {
-	char src[] = "HelloWorld";
-	char dest[11];
+	char *src = "HelloWorld";
+	char dest[13];
 	size_t n = 10;
 	printf("Source before ft_memmove: %s\n", src);
 	printf("Destination before ft_memmove: %s\n", dest);
 	ft_memmove(dest, src, n);
-	dest[n] = '\0'; // Null-terminate the destination string
+	// dest[n] = '\0'; // Null-terminate the destination string
 	printf("Destination after ft_memmove: %s\n", dest);
 	printf("Using standard memmove for comparison:\n");
 	char dest2[11];
@@ -53,4 +54,4 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	dest2[n] = '\0'; // Null-terminate the destination string
 	printf("Destination after standard memmove: %s\n", dest2);
 	return (0);
-} */
+}

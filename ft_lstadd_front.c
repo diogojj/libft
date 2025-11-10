@@ -6,7 +6,7 @@
 /*   By: dide-jes <dide-jes@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/06 15:43:15 by dide-jes          #+#    #+#             */
-/*   Updated: 2025/11/06 15:51:45 by dide-jes         ###   ########.fr       */
+/*   Updated: 2025/11/10 15:18:16 by dide-jes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	ft_lstadd_front(t_list **lst, t_list *new)
 	*lst = new;
 }
 
-int	main(void)
+/* int	main(void)
 {
 	t_list *head = NULL;
 	t_list *new_node;
@@ -46,4 +46,4 @@ int	main(void)
 	}
 
 	return (0);
-}
+} */
