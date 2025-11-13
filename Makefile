@@ -37,8 +37,8 @@ RM = rm -f
 CFLAGS = -Wall -Wextra -Werror
 INCLUDE = -I .
 
-.o:.c
-		${CC} ${CFLAGS} ${INCLUDE} -c $< -o ${<:.c=.o}
+.c.o:
+		${CC} ${CFLAGS} ${INCLUDE} -c $<
 
 $(NAME): ${OBJS}
 		ar rcs ${NAME} ${OBJS}
