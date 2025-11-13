@@ -6,7 +6,7 @@
 /*   By: dide-jes <dide-jes@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 15:31:44 by dide-jes          #+#    #+#             */
-/*   Updated: 2025/11/10 15:57:10 by dide-jes         ###   ########.fr       */
+/*   Updated: 2025/11/13 17:36:34 by dide-jes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,12 +15,14 @@
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	unsigned char		*dest_ptr;
-	const unsigned char	*src_ptr;
-	size_t				i;
+	unsigned char	*dest_ptr;
+	unsigned char	*src_ptr;
+	size_t			i;
 
+	if (!dest && !src)
+		return (NULL);
 	dest_ptr = (unsigned char *)dest;
-	src_ptr = (const unsigned char *)src;
+	src_ptr = (unsigned char *)src;
 	if (dest_ptr > src_ptr)
 	{
 		i = n;
@@ -38,7 +40,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
-int	main(void)
+/* int	main(void)
 {
 	char *src = "HelloWorld";
 	char dest[13];
@@ -54,4 +56,4 @@ int	main(void)
 	dest2[n] = '\0'; // Null-terminate the destination string
 	printf("Destination after standard memmove: %s\n", dest2);
 	return (0);
-}
+} */

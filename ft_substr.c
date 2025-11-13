@@ -6,7 +6,7 @@
 /*   By: dide-jes <dide-jes@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/27 14:32:08 by dide-jes          #+#    #+#             */
-/*   Updated: 2025/10/27 14:34:10 by dide-jes         ###   ########.fr       */
+/*   Updated: 2025/11/13 16:54:13 by dide-jes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,10 +39,14 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 }
 /* int	main(void)
 {
-	const char *str = "Hello, World!";
-	unsigned int start = 7;
-	size_t len = 5;
-	char *result = ft_substr(str, start, len);
+	const char		*str = "Hello, World!";
+	unsigned int	start;
+	size_t			len;
+	char			*result;
+
+	start = 7;
+	len = 5;
+	result = ft_substr(str, start, len);
 	if (result)
 	{
 		printf("Substring: %s\n", result);

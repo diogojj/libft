@@ -6,7 +6,7 @@
 /*   By: dide-jes <dide-jes@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 16:46:13 by dide-jes          #+#    #+#             */
-/*   Updated: 2025/10/27 12:18:51 by dide-jes         ###   ########.fr       */
+/*   Updated: 2025/11/13 15:00:29 by dide-jes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,19 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	while (*s)
+	unsigned int	i;
+	char			cc;
+
+	cc = (char)c;
+	i = 0;
+	while (s[i])
 	{
-		if (*s == (char)c)
-			return ((char *)s);
-		s++;
+		if (s[i] == cc)
+			return ((char *)&s[i]);
+		i++;
 	}
-	if (c == '\0')
-		return ((char *)s);
+	if (s[i] == cc)
+		return ((char *)&s[i]);
 	return (NULL);
 }
 /* int	main(void)

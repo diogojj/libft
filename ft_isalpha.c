@@ -6,7 +6,7 @@
 /*   By: dide-jes <dide-jes@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/20 12:11:19 by dide-jes          #+#    #+#             */
-/*   Updated: 2025/10/24 14:11:37 by dide-jes         ###   ########.fr       */
+/*   Updated: 2025/11/13 16:12:33 by dide-jes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 int	ft_isalpha(int c)
 {
 	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
-		return (_ISalpha);
+		return (1024);
 	return (0);
 }
 /* int	main(void)

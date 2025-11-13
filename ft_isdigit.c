@@ -6,7 +6,7 @@
 /*   By: dide-jes <dide-jes@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/20 12:12:19 by dide-jes          #+#    #+#             */
-/*   Updated: 2025/10/27 12:04:30 by dide-jes         ###   ########.fr       */
+/*   Updated: 2025/11/13 16:12:52 by dide-jes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 int	ft_isdigit(int c)
 {
 	if (c >= '0' && c <= '9')
-		return (_ISdigit);
+		return (2048);
 	return (0);
 }
 /* int	main(void)
