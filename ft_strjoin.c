@@ -6,7 +6,7 @@
 /*   By: dide-jes <dide-jes@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/27 14:54:17 by dide-jes          #+#    #+#             */
-/*   Updated: 2025/10/27 14:56:48 by dide-jes         ###   ########.fr       */
+/*   Updated: 2025/11/14 14:40:28 by dide-jes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,15 +30,17 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	joined[len1 + len2] = '\0';
 	return (joined);
 }
-/* int	main(void)
+int	main(void)
 {
-	const char *str1 = "Hello, ";
-	const char *str2 = "World!";
-	char *result = ft_strjoin(str1, str2);
+	const char	*str1 = "Hello, ";
+	const char	*str2 = "World!";
+	char		*result;
+
+	result = ft_strjoin(str1, str2);
 	if (result)
 	{
 		printf("Joined string: %s\n", result);
 		free(result);
 	}
 	return (0);
-} */
+}

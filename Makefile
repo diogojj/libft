@@ -6,7 +6,7 @@
 #    By: dide-jes <dide-jes@student.42lisboa.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/27 12:36:15 by dide-jes          #+#    #+#              #
-#    Updated: 2025/11/06 15:28:33 by dide-jes         ###   ########.fr        #
+#    Updated: 2025/11/14 11:23:14 by dide-jes         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -37,7 +37,7 @@ RM = rm -f
 CFLAGS = -Wall -Wextra -Werror
 INCLUDE = -I .
 
-.c.o:
+%o.:%.c
 		${CC} ${CFLAGS} ${INCLUDE} -c $<
 
 $(NAME): ${OBJS}

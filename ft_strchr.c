@@ -6,7 +6,7 @@
 /*   By: dide-jes <dide-jes@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 16:46:13 by dide-jes          #+#    #+#             */
-/*   Updated: 2025/11/13 15:00:29 by dide-jes         ###   ########.fr       */
+/*   Updated: 2025/11/14 16:23:28 by dide-jes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ char	*ft_strchr(const char *s, int c)
 /* int	main(void)
 {
 	const char *str = "Hello, World!";
-	char ch = 'W';
+	char ch = 'e';
 	char *result;
 	result = ft_strchr(str, ch);
 	if (result)

@@ -6,7 +6,7 @@
 /*   By: dide-jes <dide-jes@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/06 14:37:02 by dide-jes          #+#    #+#             */
-/*   Updated: 2025/11/06 14:40:12 by dide-jes         ###   ########.fr       */
+/*   Updated: 2025/11/14 10:55:01 by dide-jes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ void	ft_putnbr_fd(int n, int fd)
 {
 	long	num;
 
+	if (fd < 0)
+		return ;
 	num = n;
 	if (num < 0)
 	{

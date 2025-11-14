@@ -6,7 +6,7 @@
 /*   By: dide-jes <dide-jes@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/27 16:04:54 by dide-jes          #+#    #+#             */
-/*   Updated: 2025/10/28 12:21:38 by dide-jes         ###   ########.fr       */
+/*   Updated: 2025/11/14 14:31:29 by dide-jes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,7 +62,7 @@ char	**ft_split(char const *s, char c)
 
 	i = 0;
 	j = 0;
-	words = (char **)malloc(sizeof(char *) * (ft_count_words(s, c) + 1));
+	words = malloc(sizeof(char *) * (ft_count_words(s, c) + 1));
 	if (!words || !s)
 		return (NULL);
 	while (s[i])
